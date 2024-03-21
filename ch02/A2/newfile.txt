@@ -1,5 +1,6 @@
 #written by FileProperties
-#Wed Oct 20 17:30:45 JST 2021
+#Thu Mar 21 09:23:09 KST 2024
 depth=32
 width=1024
+name=Â÷¼­¿¬
 height=512

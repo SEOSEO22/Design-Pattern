@@ -5,7 +5,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
+// Adaptor
 public class FileProperties implements FileIO {
+    // 제공되는 클래스 Properties (java.util)
     Properties property = new Properties();
 
     @Override
