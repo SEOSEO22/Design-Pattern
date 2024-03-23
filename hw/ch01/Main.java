@@ -15,16 +15,16 @@ public class Main {
         bookShelf.appendBook(new Book("인간실격", "다자이 오사무"));
 
         // 명시적으로 Iterator를 사용하는 방법 
-        Iterator<Book> it = bookShelf.iteratorBackward(); // 차서연 : 역방향 반복자
+        Iterator<Book> it = bookShelf.iterator();
         while (it.hasNext()) {
             Book book = it.next();
-            System.out.println(book.getName());
+            System.out.println(book.getName() + " " + book.getAuthor());
         }
         System.out.println();
 
         // 확장 for문을 사용하는 방법 
-        for (Book book: bookShelf) { // 차서연 : 순방향 반복자
-            System.out.println(book.getName());
+        for (Book book: bookShelf) {
+            System.out.println(book.getName() + " " + book.getAuthor());
         }
         System.out.println();
     }

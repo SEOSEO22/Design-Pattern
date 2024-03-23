@@ -1,0 +1,7 @@
+#written by FileProperties
+#Sun Mar 24 02:29:58 KST 2024
+bornYear=2003
+Year=2024
+StudentId=20220732
+Name=ChaSeoyeon
+Location=Seoul
