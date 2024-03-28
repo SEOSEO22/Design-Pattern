@@ -1,18 +1,13 @@
 package hw.ch03;
 
-// 부모 클래스
 public abstract class AbstractDisplay {
-    // open, print, close는 하위 클래스에 구현을 맡기는 추상 메소드 
     public abstract void open();
     public abstract void print();
     public abstract void close();
 
-    // display는 AbstractDisplay에서 구현하는 메소드 
-    // 큰 흐름을 결정(오픈 1번, print 5번, close 1번)
-    // display == 템플릿 메소드
-    public final void display() {
+    public final void display(int times) { // 차서연 : 매개변수를 times로 변경
         open();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < times; i++) { // 차서연 : for문이 times만큼 반복되도록 변경
             print();
         }
         close();
