@@ -5,8 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Triple {
+    // key와 value("ALPHA", Triple("ALPHA") 객체), ...
+    // <> -> Type Parameter, String과 Triple 타입의 key와 value를 갖는 HashMap 생성
     private static Map<String,Triple> map = new HashMap<>();
-    static {
+    
+    // static 변수임을 한 번에 설정
+    static { // static -> 클래스 로드 시 실행
         String[] names = { "ALPHA", "BETA", "GAMMA" };
         Arrays.stream(names).forEach(s -> map.put(s, new Triple(s)));
     }
