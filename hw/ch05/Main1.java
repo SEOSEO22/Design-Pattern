@@ -4,6 +4,8 @@ import hw.ch05.idcard.IDCardFactoryChaSeoyeon1;
 
 public class Main1 {
     public static void main(String[] args) {
+        System.out.println("20220732 차서연");
+        
         IDCardFactoryChaSeoyeon1 factory1 = IDCardFactoryChaSeoyeon1.getInstance();
         IDCardFactoryChaSeoyeon1 factory2 = IDCardFactoryChaSeoyeon1.getInstance();
     
